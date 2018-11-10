@@ -243,7 +243,7 @@ public class TiOLED_WG2832 {
 	 * @return max line number
 	 */
 	public int getMaxLineNumber() {
-		return dotMatrixObj.getVDotNum();
+		return 32 / dotMatrixObj.getVDotNum();
 	}
 
 	/**
@@ -252,6 +252,6 @@ public class TiOLED_WG2832 {
 	 * @return max column number
 	 */
 	public int getMaxColumnNumber() {
-		return dotMatrixObj.getHDotNum();
+		return 128 / dotMatrixObj.getHDotNum();
 	}
 }
